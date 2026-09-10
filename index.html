@@ -28,7 +28,7 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pages/menu.html">Menu</a></li>
                 <li><a href="pages/locations.html">Locations</a></li>
-                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
                 <li><a href="pages/faq.html">FAQ</a></li>
             </ul>
@@ -37,8 +37,15 @@
         <div class="main-nav-right">
            
            <a href="pages/order.html" class="cart-link"> 
-             <img src="icons/cart1.png" alt="Cart icon">
-             <span>Cart(0)</span>
+              <div class="cart-count-wrapper">
+                <img src="icons/cart1.png" alt="Cart icon">
+                <span id="cartCount" class="Cart-count">0</span>
+              </div>
+            
+              <span class="totalPrice">
+                $<span id="cartTotal">0.00</span>
+              </span>
+           
            </a>
              
           <!-- Mobile menu open button -->
@@ -190,10 +197,18 @@
                         </p>
 
                         <div class="food-bottom">
-                            <strong>$9.49</strong>
-                            <a href="pages/order.html" class="small-btn">
+                            <strong>$7.50</strong>
+                            
+                             <button
+                                type="button"
+                                class="small-btn add-to-cart"
+                                data-id="classic-campus-burger"
+                                data-img="../images/classic-burger.jpg"
+                                data-name="Classic Campus Burger"
+                                data-price="7.50">
                                 Add to Cart
-                            </a>
+                            </button>
+
                         </div>
                     </div>
                 </article>
@@ -218,10 +233,16 @@
                         </p>
 
                         <div class="food-bottom">
-                            <strong>$8.99</strong>
-                            <a href="pages/order.html" class="small-btn">
+                            <strong>$8.50</strong>
+                             <button
+                                type="button"
+                                class="small-btn add-to-cart"
+                                data-id="grilled-chicken-wrap"
+                                data-img="../images/chicken-wrap.jpg"
+                                data-name="Grilled Chicken Wrap"
+                                data-price="8.50">
                                 Add to Cart
-                            </a>
+                            </button>
                         </div>
                     </div>
 
@@ -247,9 +268,15 @@
 
                         <div class="food-bottom">
                             <strong>$10.99</strong>
-                            <a href="pages/order.html" class="small-btn">
+                             <button
+                                type="button"
+                                class="small-btn add-to-cart"
+                                data-id="classic-chesse-pizza"
+                                data-img="../images/cheese-pizza.jpg"
+                                data-name="Classic Cheese Pizza"
+                                data-price="10.99">
                                 Add to Cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </article>

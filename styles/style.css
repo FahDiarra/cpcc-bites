@@ -142,25 +142,49 @@ ul {
     align-items: center;
     gap: 5px;
     background-color: var(--primary);
-    padding: 8px 16px;
-    border-radius: 25px;
+    padding: 7px 10px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
+    position: relative;
 }
 
 .cart-link img{
- width: 30px;
- height: 30px;
+ width: 28px;
+ height: 28px;
+ object-fit: contain;
 }
-.cart-link span{
-  font-weight: bold;
-  color: var(--white);
-}
+
 .cart-link:hover {
     background-color: var(--primary-dark);
 }
 
+.cart-count-wrapper{
+    display: flex;
+    position: relative;
+}
 
-
+.Cart-count {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.totalPrice{
+     font-weight:bold ;
+    color: var(--white);
+}
 
 .menu-open-btn,
 .menu-close-btn{
@@ -526,26 +550,41 @@ ul {
 }
 
 .small-btn {
-    background-color: var(--primary);
-
-    color: var(--white);
-
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
     padding: 8px 14px;
-
     border-radius: 20px;
-
     font-size: 0.8rem;
-
     font-weight: bold;
+    transition: ease 0.80s;
 }
+
 
 .small-btn:hover {
-    background-color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: var(--white);
 }
+
+
+.remove {
+    border: none;
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--white);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: ease 1s;
+}
+
+
 
 .center-button {
     text-align: center;
-
     margin-top: 40px;
 }
 
@@ -848,9 +887,14 @@ ul {
         min-height: 300px;
     }
 
+    .small-btn:hover {
+     background: none;
+     
+   }
+
+
     .location-preview {
         grid-template-columns: 1fr;
-
         gap: 30px;
     }
 

@@ -38,8 +38,14 @@
         <div class="main-nav-right">
            
            <a href="./order.html" class="cart-link"> 
-             <img src="../icons/cart1.png" alt="Cart icon">
-             <span>Cart(0)</span>
+             <div class="cart-count-wrapper">
+                <img src="../icons/cart1.png" alt="Cart icon">
+                <span id="cartCount" class="Cart-count">0</span>
+              </div>
+            
+              <span class="totalPrice">
+                $<span id="cartTotal">0.00</span>
+              </span>
            </a>
              
           <!-- Mobile menu open button -->
@@ -55,7 +61,7 @@
          <nav class="mobile-menu" id="mobileMenu">  
             <div class="mobile-menu-logo-and-close-container">
               <div class="logo">
-                <a href="../index.html"><img src="images/logo.png" alt="Logo"/></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="Logo"/></a>
                 <a href="../index.html" calss="logo_label" >CPCC <span>Bites</span></a>
               </div>
 
