@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPCC Bites - Fresh, affordable and delicious food for students, faculty and staff.">
+    <meta name="author" content="Fah Diarra">
+    <title>CPCC Bites | Campus Food & Café</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="logo">
+            <a href="./index.html"><img src="images/logo.png" alt="Logo"/></a>
+            <a href="./index.html" class="logo_label" >CPCC <span>Bites</span></a>
+        </div>
+
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/locations.html">Locations</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        
+        <div class="main-nav-right">
+           
+           <a href="pages/order.html" class="cart-link"> 
+             <img src="icons/cart1.png" alt="Cart icon">
+             <span>Cart(0)</span>
+           </a>
+             
+          <!-- Mobile menu open button -->
+           <button class="menu-open-btn" id="openBtn">
+             <img src="icons/menu.png" alt="Menu open button">
+           </button>
+        
+        </div>
+
+
+         <!-- Mobile menu  class to show is "open" -->
+
+         <nav class="mobile-menu" id="mobileMenu">  
+            <div class="mobile-menu-logo-and-close-container">
+              <div class="logo">
+                <a href="./index.html"><img src="images/logo.png" alt="Logo"/></a>
+                <a href="./index.html" calss="logo_label" >CPCC <span>Bites</span></a>
+              </div>
+
+
+              <!-- Mobile menu close button -->
+              <button class="menu-close-btn" id="closeBtn">
+                <img src="icons/close.png" alt="Menu close button">
+              </button>
+            </div>
+                  
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/locations.html">Locations</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO CPCC BITES</p>
+                <h1>Fresh Food.<br>Made for Campus Life.</h1>
+                <p>Delicious, affordable meals made for students,
+                    faculty, and staff.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="pages/menu.html" class="btn btn-secondary">
+                        View Full Menu
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero-food1.jpg"
+                    alt="Fresh burger with fries served at CPCC Bites">
+            </div>
+
+        </section>
+
+
+        <!-- Categories -->
+        <section class="categories section">
+
+            <div class="section-heading">
+                <p class="eyebrow">OUR MENU</p>
+                <h2>What are you craving?</h2>
+                <p>
+                    Choose from our selection of fresh and delicious meals.
+                </p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="pages/menu.html#burgers" class="category-card">
+                    <img src="images/burger.png" alt="">
+                    <h3>Burgers</h3>
+                    <p>Fresh & delicious</p>
+                </a>
+
+                <a href="pages/menu.html#pizza" class="category-card">
+                   <img src="images/pizza.png" alt="">
+                    <h3>Pizza</h3>
+                    <p>Hot & cheesy</p>
+                </a>
+
+                <a href="pages/menu.html#sandwiches" class="category-card">
+                    <img src="images/sandwich.png" alt="">
+                    <h3>Sandwiches</h3>
+                    <p>Quick & tasty</p>
+                </a>
+
+                <a href="pages/menu.html#salads" class="category-card">
+                    <img src="images/salad1.png" alt="">
+                    <h3>Salads</h3>
+                    <p>Fresh & healthy</p>
+                </a>
+
+                <a href="pages/menu.html#drinks" class="category-card">
+                    <img src="images/drink1.png" alt="">
+                    <h3>Drinks</h3>
+                    <p>Cold & refreshing</p>
+                </a>
+
+                <a href="pages/menu.html#desserts" class="category-card">
+                   <img src="images/dessert.png" alt="">
+                    <h3>Desserts</h3>
+                    <p>Sweet treats</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Popular Items -->
+        <section class="popular section">
+
+            <div class="section-heading">
+                <p class="eyebrow">CUSTOMER FAVORITES</p>
+                <h2>Popular at CPCC Bites</h2>
+                <p>Try some of our most popular meals.</p>
+            </div>
+
+
+            <div class="food-grid">
+                <!-- Food Card -->
+                <article class="food-card">
+
+                    <div class="food-image">
+                        <img src="images/classic-burger.jpg"
+                            alt="Classic campus burger">
+                    </div>
+
+                    <div class="food-content">
+                        <span class="food-category">
+                            Burger
+                        </span>
+                        <h3>Classic Campus Burger</h3>
+                        <p>
+                            Beef patty, cheddar cheese, lettuce,
+                            tomato and house sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$9.49</strong>
+                            <a href="pages/order.html" class="small-btn">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Food Card -->
+                <article class="food-card">
+
+                    <div class="food-image">
+                        <img src="images/chicken-wrap.jpg"
+                            alt="Grilled chicken wrap">
+                    </div>
+
+                    <div class="food-content">
+                        <span class="food-category">
+                            Sandwich
+                        </span>
+                        <h3>Grilled Chicken Wrap</h3>
+                        <p>
+                            Grilled chicken, fresh vegetables
+                            and our special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$8.99</strong>
+                            <a href="pages/order.html" class="small-btn">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Food Card -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="images/cheese-pizza.jpg"
+                            alt="Cheese pizza">
+                    </div>
+
+                    <div class="food-content">
+                        <span class="food-category">
+                            Pizza
+                        </span>
+                        <h3>Classic Cheese Pizza</h3>
+                        <p>
+                            Crispy crust with tomato sauce
+                            and melted mozzarella.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$10.99</strong>
+                            <a href="pages/order.html" class="small-btn">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="center-button">
+                <a href="pages/menu.html" class="btn btn-primary">
+                    View Full Menu
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Student Special -->
+        <section class="student-special">
+
+            <div class="special-content">
+
+                <p class="eyebrow">STUDENT SPECIAL</p>
+
+                <h2>
+                    A great meal<br>
+                    at a great price.
+                </h2>
+
+                <p>
+                    Get a burger, fries and a drink
+                    for only <strong>$11.99</strong>.
+                </p>
+
+                <a href="pages/order.html" class="btn btn-light">
+                    Get the Deal
+                </a>
+
+            </div>
+
+            <div class="special-image">
+
+                <img src="images/student-meal.jpg"
+                    alt="Student meal with burger, fries and drink">
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section class="why-us section">
+
+            <div class="section-heading">
+                <p class="eyebrow">WHY CPCC BITES?</p>
+                <h2>Food that fits your day.</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <article class="benefit">
+                     <div>
+                    <img src="icons/faster.png" alt="">
+                    <h3>Fast Service</h3>
+                    </div>
+                    <p>
+                        Quick meals for busy campus days.
+                    </p>
+                </article>
+
+                <article class="benefit">
+                     <div>
+                    <img src="icons/salad.png" alt="">
+                    <h3>Fresh Ingredients</h3>
+                    </div>
+                    <p>
+                        Fresh ingredients prepared with care.
+                    </p>
+                </article>
+
+
+                <article class="benefit">
+                    <div>
+                      <img src="icons/dollar.png" alt="">
+                      <h3>Affordable </h3>
+                    </div>
+                    <p>
+                        Without breaking the budget.
+                    </p>
+                </article>
+
+
+                <article class="benefit">
+                    <div>
+                   <img src="icons/location.png" alt="">
+                    <h3>Locations</h3>
+                    </div>
+                    <p>
+                        Find us at all campus locations.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Location Preview -->
+        <section class="location-preview section">
+
+            <div class="location-text">
+
+                <p class="eyebrow">FIND US</p>
+
+                <h2>
+                    Good food is<br>
+                    never too far away.
+                </h2>
+
+                <p>
+                    Visit one of our convenient campus locations
+                    and enjoy a fresh meal between classes.
+                </p>
+
+                <a href="pages/locations.html" class="btn btn-primary">
+                    View Locations
+                </a>
+
+            </div>
+
+            <div class="location-card">
+                <h3>Locations(6)</h3>
+                <p>North Carolina</p>
+     
+                <div class="hours">
+                    <strong>Hours</strong>
+                    <p>Monday - Friday</p>
+                    <p>7:00 AM - 8:00 PM</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>CPCC <span>Bites</span></h2>
+                <p>Fresh food. Campus energy.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/menu.html">Menu</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="pages/locations.html">Locations</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><a href="tel:+17045550123">Tel: (704) 555-0123</a></p>
+                <p><a href="mailto:hello@cpccbites.com">Email: hello@cpccbites.com</a></p>
+                 <p>North</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CPCC Bites. All rights reserved.</p>
+            <p>Made with Heart for the CPCC community.</p>
+            <p>Created by Fah Diarra</p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
