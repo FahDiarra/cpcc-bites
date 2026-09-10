@@ -1,0 +1,119 @@
+/* =========================
+   MENU PAGE
+   ========================= */
+
+.menu-section {
+    padding: 60px 20px;
+    background: var(--background);
+}
+
+.menu-section:nth-child(even) {
+    background: var(--white);
+}
+
+.menu-section-header {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.menu-label {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.menu-section-header h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.menu-section-header p:last-child {
+    color: var(--muted);
+    margin: 0;
+}
+
+
+/* FOOD CARDS */
+
+.menu-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-section:nth-child(even) .menu-card {
+    background: var(--background);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.menu-price {
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .menu-section {
+        padding: 45px 15px;
+    }
+
+    .menu-section-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

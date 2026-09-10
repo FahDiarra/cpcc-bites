@@ -31,7 +31,7 @@ The project consists of seven distinct HTML pages with a fully integrated global
 
 The project utilizes a modern, warm, and inviting color scheme designed to enhance readability and stimulate visual interest:
 
-| Palette Role | Color Name | Hex Code | Visual Preview |
+| Palette Role | Color Name | Hex Code |
 | :--- | :--- | :--- | :--- |
 | **Background** | Warm Off-White | `#FFF8F0` | 
 | **Primary** | Dark Red | `#7A1F1F` |

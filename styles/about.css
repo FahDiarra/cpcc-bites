@@ -1,0 +1,295 @@
+
+
+
+/* =========================================
+   CPCC BITES - ABOUT PAGE
+   ========================================= */
+
+
+/* ---------- About Hero ---------- */
+
+.about-hero {
+    padding: 80px 20px;
+    background: var(--background);
+}
+
+.about-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-label,
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1.05;
+    color: var(--text);
+}
+
+.about-hero h1 span {
+    color: var(--primary);
+}
+
+.about-hero-text p {
+    max-width: 560px;
+    margin-bottom: 30px;
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-hero-image {
+    position: relative;
+}
+
+.about-hero-image::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--secondary);
+    border-radius: 24px;
+    z-index: 0;
+}
+
+.about-hero-image img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.about-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.about-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+
+
+/* ---------- Values ---------- */
+
+.values-section {
+    padding: 90px 10px;
+    background: var(--white);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.values-content{
+    padding: 0 30px;
+}
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.values-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.values-list li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+
+/* ---------- Values Box ---------- */
+
+.values-box {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        #8a2387
+    );
+    text-align: center;
+}
+
+.values-box-content {
+    color: var(--white);
+}
+
+.heart {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.values-box h3 {
+    margin: 0 0 20px;
+    font-size: 2.8rem;
+    line-height: 1.1;
+}
+
+.values-box h3 span {
+    color: var(--secondary);
+}
+
+.values-box p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ---------- CTA ---------- */
+
+.about-cta {
+    padding: 90px 0;
+    color: var(--text);
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content .section-label {
+    color: var(--secondary);
+}
+
+.cta-content h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.cta-content p {
+    margin: 0 auto 30px;
+    max-width: 600px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+
+    .about-hero-content,
+    .story-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-hero {
+        padding: 60px 0;
+    }
+
+    .about-hero-image {
+        max-width: 700px;
+    }
+
+    .values-box {
+        min-height: 330px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 45px 10px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-hero-image img {
+        height: 320px;
+        border-radius: 18px;
+    }
+
+    .about-hero-image::before {
+        top: -10px;
+        right: -10px;
+        border-radius: 18px;
+    }
+
+    .values-section,
+    .about-cta {
+        padding: 65px 10px;
+    }
+
+    .story-image img {
+        height: 300px;
+    }
+
+    .values-content h2,
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+    .values-box h3 {
+        font-size: 2.3rem;
+    }
+    .values-box {
+        min-height: 100px;
+    }
+}

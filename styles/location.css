@@ -1,0 +1,112 @@
+/* =========================
+   LOCATIONS PAGE
+   ========================= */
+
+.locations-hero {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.locations-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.locations-hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 15px;
+}
+
+.locations-hero p {
+    line-height: 1.6;
+}
+
+.locations-section {
+    background: var(--background);
+    padding: 60px 20px;
+}
+
+.locations-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* LOCATION CARD */
+
+.location-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 25px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h2 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.location-card p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.location-link {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .locations-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .locations-hero {
+        padding: 50px 20px;
+    }
+
+    .locations-hero h1 {
+        font-size: 2rem;
+    }
+
+    .locations-section {
+        padding: 40px 15px;
+    }
+
+    .locations-container {
+        grid-template-columns: 1fr;
+    }
+
+}
