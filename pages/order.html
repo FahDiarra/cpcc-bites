@@ -10,7 +10,7 @@
      <title>Order| CPCC Bites</title>
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/faq.css">
+    <link rel="stylesheet" href="../styles/order.css">
 </head>
 
 <body>
@@ -31,23 +31,23 @@
                 <li><a href="./locations.html"  >Locations</a></li>
                 <li><a href="./about.html" >About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./faq.html" class="active">FAQ</a></li>
+                <li><a href="./faq.html" >FAQ</a></li>
             </ul>
         </nav>
         
         <div class="main-nav-right">
-           
-           <a href="./order.html" class="cart-link"> 
-             <div class="cart-count-wrapper">
+            
+            <a href="./order.html" class="cart-link ativeOrder"> 
+              <div class="cart-count-wrapper">
                 <img src="../icons/cart1.png" alt="Cart icon">
-                <span id="cartCount" class="Cart-count">0</span>
+                <span id="cartCountOrder" class="Cart-count">0</span>
               </div>
             
               <span class="totalPrice">
-                $<span id="cartTotal">0.00</span>
+                <span >Your Cart</span>
               </span>
            </a>
-             
+          
           <!-- Mobile menu open button -->
            <button class="menu-open-btn" id="openBtn">
              <img src="../icons/menu.png" alt="Menu open button">
@@ -78,69 +78,216 @@
                 <li><a href="./locations.html">Locations</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./faq.html" class="active">FAQ</a></li>
+                <li><a href="./faq.html" >FAQ</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
+        <div class="cart">
+            <div class="cart-menu" >
+               
+                
+                <div class="cart-main-wrapper">
+                    <div id="cartItems" class="cart-items">
+                           <div class="empty-cart">
+                             Your cart is empty.
+                          </div>
+                    </div>
+                
+                    
+                    <div class="cart-footer">
+                        <div class="cart-summary">
+                            <div class="cart-summary-row">
+                                <span>Subtotal :</span>
+                                <strong id="cartSubtotal">$0.00</strong>
+                            </div>
 
-     
+                            <div class="cart-summary-row">
+                                <span>Tax (8.25%) :</span>
+                                <strong id="cartTax">$0.00</strong>
+                            </div>
+
+                             <div class="cart-summary-row">
+                                <span>Tip :</span>
+                                <strong  id="tipSelected" >$0</strong>
+                            </div>
+
+                            <div class="cart-summary-divider"></div>
+
+                            <div class="cart-total">
+                                <span>Total :</span>
+                                <strong id="cartTotalOrder">$0.00</strong>
+                            </div>
+
+                            <div class="cart-summary-divider"></div>
+                 
+
+                        <div class="cart-summary-input">
+                            <label for="orderName">Name</label>
+                            <input
+                                type="text"
+                                id="orderName"
+                                placeholder="Name for your order"
+                            >
+                        </div>
+
+
+                        <div class="cart-summary-tips">
+
+                            <div class="tips-header">              
+                                    <h3>Want to add a tip?</h3>                              
+                            </div>
+
+                            <div class="tip-options">
+
+                                <label class="tip-option">
+                                    <input type="radio" name="tip" value="1">
+                                    <span>$1</span>
+                                </label>
+
+                                <label class="tip-option">
+                                    <input type="radio" name="tip" value="2">
+                                    <span>$2</span>
+                                </label>
+
+                                <label class="tip-option">
+                                    <input type="radio" name="tip" value="5">
+                                    <span>$5</span>
+                                </label>
+
+                                <label class="tip-option">
+                                    <input type="radio" name="tip" value="10">
+                                    <span>$10</span>
+                                </label>
+
+                                <label class="tip-option no-tip">
+                                    <input type="radio" name="tip" value="0" >
+                                    <span>No tip</span>
+                                </label>
+
+                                <input type="radio"  name="tip" value="no" hidden checked>
+
+                            </div>
+
+                        </div>
+                    
+
+                        </div>
+
+                        <button type="button" class="checkout-btn" >
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
     </main>
 
 
-    <!-- Footer -->
-    <footer class="site-footer">
+    <div class="checkout-modal" id="checkoutModal">
+            <div class="checkout-modal-overlay"></div>
 
-        <div class="footer-content">
+            <div class="checkout-modal-content">
 
-            <div class="footer-brand">
-                <h2>CPCC <span>Bites</span></h2>
-                <p>Fresh food. Campus energy.</p>
+                <button
+                    type="button"
+                    class="checkout-modal-close"
+                    id="checkoutModalClose"
+                    aria-label="Close">
+                    &times;
+                </button>
+
+                <div class="checkout-success-icon">
+                    V
+                </div>
+
+                <h2>Order Confirmed!</h2>
+
+                <p class="checkout-snapshot-message">
+                    Please take a screenshot of your order information
+                    for your records.
+                </p>
+
+                <div class="order-info">
+                    <div class="order-info-row">
+                        <span>Order Number</span>
+                        <strong id="confirmationOrderNumber">
+                            #000000
+                        </strong>
+                    </div>
+
+                    <div class="order-info-row">
+                        <span>Name</span>
+                        <strong id="confirmationOrderName">
+                            -
+                        </strong>
+                    </div>
+
+                    <div class="order-info-row">
+                        <span>Time</span>
+                        <strong id="confirmationOrderTime">
+                            -
+                        </strong>
+                    </div>
+
+                    <div class="order-info-divider"></div>
+
+                    <div class="order-info-row">
+                        <span>Subtotal</span>
+                        <strong id="confirmationSubtotal">
+                            $0.00
+                        </strong>
+                    </div>
+
+                    <div class="order-info-row">
+                        <span>Tax</span>
+                        <strong id="confirmationTax">
+                            $0.00
+                        </strong>
+                    </div>
+
+                    <div class="order-info-row">
+                        <span>Tip</span>
+                        <strong id="confirmationTip">
+                            $0.00
+                        </strong>
+                    </div>
+
+                    <div class="order-info-divider"></div>
+
+                    <div class="order-total-row">
+                        <span>Total</span>
+                        <strong id="confirmationTotal">
+                            $0.00
+                        </strong>
+                    </div>
+                </div>
+
+                <p class="checkout-thanks">
+                    Thank you for ordering with CPCC Bites!
+                </p>
+
+                <button
+                    type="button"
+                    class="checkout-done-btn"
+                    id="checkoutDoneButton">
+                    Done
+                </button>
+
             </div>
-
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-links">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p><a href="tel:+17045550123">Tel: (704) 555-0123</a></p>
-                <p><a href="mailto:hello@cpccbites.com">Email: hello@cpccbites.com</a></p>
-                 <p>North</p>
-            </div>
-
         </div>
-
-
-        <div class="footer-bottom">
-            <p>&copy; <span id="current-year"></span> CPCC Bites. All rights reserved.</p>
-            <p>Made with Heart for the CPCC community.</p>
-            <p>Created by Fah Diarra</p>
-        </div>
-
-    </footer>
-
 
     <!-- JavaScript -->
-    <script src="../scripts/main.js"></script>
+     <script src="../scripts/cart-actions.js"></script>
+     <script src="../scripts/main.js"></script>
+    
 
 </body>
 
